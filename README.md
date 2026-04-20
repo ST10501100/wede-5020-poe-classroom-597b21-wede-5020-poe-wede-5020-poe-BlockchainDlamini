@@ -16,7 +16,13 @@ Beez Bakery
 
 ## Timeline and Milestones
 
-Pull this from your project proposal.
+Research and Planning: Decided on NGO and started my research on the business on Day 1-3.
+Research on business: Finished off my research on day 4 and started looking for images and Logo about the business.
+Writing proposal: Wrote down my proposal for the business on days 5-12.
+Writing HTML code: Started writing my HTML code on days 13-20.
+
+Milestone
+
 
 ## Sitemap
 
