@@ -21,7 +21,12 @@ Research on business: Finished off my research on day 4 and started looking for 
 Writing proposal: Wrote down my proposal for the business on days 5-12.
 Writing HTML code: Started writing my HTML code on days 13-20.
 
-Milestone
+Milestones
+
+Codes for all web pages are functoning.
+
+
+
 
 
 ## Sitemap
