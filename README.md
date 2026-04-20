@@ -1,17 +1,18 @@
 # Project Title
-Your project's title
+Beez Bakery
 
 ## Student Information
-**Student number:** Your student number <br>
-**Student Name:** Your full name
+**Student number:** ST10501100 <br>
+**Student Name:** Pako Mangwane
 
 ## Project Overview
 
-Pull this from your project proposal.
+ Beez bakery was founded in 2016 with an idea of providing fresh, rich in nourishment, high quality baked goods. Beez bakery is a small home-based business which is growing quite well and has a good customer base. Over the past 5 years Beez Bakery has expanded their product range from just cookies and biscuits to a wide variety of sweet deserts like cakes, pastries, jam tarts and many more. It has become well known locally.
+ Beez Bakery’s mission and vision is to provide affordable and nutritious products to the community.
 
 ## Website Goals and Objectives
 
-Pull this from your project proposal.
+ Beez Bakery’s mission and vision is to provide affordable and nutritious products to the community. The business aims at expanding and providing quality products nationally.
 
 ## Timeline and Milestones
 
