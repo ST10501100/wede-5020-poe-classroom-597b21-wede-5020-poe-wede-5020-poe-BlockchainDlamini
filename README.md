@@ -30,7 +30,7 @@ Codes for all web pages are functoning.
 
 
 ## Sitemap
-
+<img/Screenshot 2026-04-20 213424.png>
   
 ## References
 
