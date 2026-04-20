@@ -73,7 +73,24 @@
 <section class="order">
 
     <h2>Place Your Order</h2>
-    <p>Fill in details to start order.</p>
+    
+    <b><p>Plain scones</b>
+       5L =R300 |
+       10L=R500 |
+       20L=R750
+    </p>
+  <b><p>Vanilla Scones</b>
+       5L =R400 |
+       10L=R600 |
+       20L=R800
+  </p> 
+
+ <b><p>Melting Moments Buscuits</b>
+      2.5L =R200 |
+        5L =R400 |
+        10L=R850 |
+        20L=R1300
+        <p>Fill in details to start order.</p>
 
     <form onsubmit="sendOrder(); return false;">
 
@@ -118,5 +135,34 @@
         </div>
     </footer>
 
+<!-- SCRIPT -->
+<script>
+function sendOrder() {
+
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var product = document.getElementById("product").value;
+    var quantity = document.getElementById("quantity").value;
+    var details = document.getElementById("details").value;
+
+    var message =
+        "New Order from Beez Bakery:%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Product: " + product + "%0A" +
+        "Quantity: " + quantity + "%0A" +
+        "Details: " + details;
+
+    var url = "https://wa.me/27764233543?text=" + message;
+
+    window.open(url, "_blank");
+}
+</script>
+
 </body>
 </html>
+
+
+
+
+ 
