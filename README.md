@@ -35,3 +35,12 @@ Codes for all web pages are functoning.
 ## References
 
 Ensure that all sources used in your assignment are cited and referenced using the Harvard referencing style.
+
+1.)Bakerpedia  Bakery and milling key performance indicators (KPI). Available at: https://bakerpedia.com/bakery-key-performance-indicators-kpi/⁠ (Accessed: 9 April 2026).
+
+2.)ChatGPT (2026)
+
+3.)Startup Financial Projection Bakery profitability. Available at: https://startupfinancialprojection.com/blogs/profitability/bakery⁠� (Accessed: 9 April 2026).
+
+4.)-WEDE5020/p/w Module Manual 2026 ( First Edition: 2012)
+
