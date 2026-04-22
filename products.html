@@ -14,15 +14,15 @@
     
        <img src="img/Bakery Logo.jpeg" width="32">
         
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <nav class="navbar">
         <a href="home.html">Home</a>  
-        <a href="products.html"><Products></a>  
+        <a href="about.html">About</a> 
         <a href="enquiry.html">Enquire</a>
         <a href="contact.html">Contact</a>
-        <a href="about.html">About</a> 
+        <a href="products.html">Products</a> 
            
-        <a href="products.html">Products</a>
+         
         
         <div class="icons">
     
@@ -93,30 +93,10 @@
         20L=R1300
         <p>Fill in details to start order.</p>
 
-    <form onsubmit="sendOrder(); return false;">
+         
+        
 
-        <input type="text" id="name" placeholder="Your Name" required><br>
-
-        <input type="tel" id="phone" placeholder="Your Phone Number" required><br>
-
-        <select id="product" required>
-            <option value="">Select Product</option>
-            <option>Cakes</option>
-            <option>Buttercream Cakes</option>
-            <option>Wedding Cakes</option>
-            <option>Fondant Cakes</option>
-            <option>Cupcakes</option>
-            <option>Cookies</option>
-            <option>Jam Tarts</option>
-        </select><br>
-
-        <input type="number" id="quantity" placeholder="Quantity" required><br>
-
-        <textarea id="details" placeholder="Extra details (flavour, design, date, etc.)"></textarea><br>
-
-        <button type="submit">
-            <i class="fab fa-whatsapp"></i> Order on WhatsApp
-        </button>
+     
 
     </form>
 
@@ -136,30 +116,7 @@
         </div>
     </footer>
 
-<!-- SCRIPT -->
-<script>
-function sendOrder() {
-
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var product = document.getElementById("product").value;
-    var quantity = document.getElementById("quantity").value;
-    var details = document.getElementById("details").value;
-
-    var message =
-        "New Order from Beez Bakery:%0A" +
-        "Name: " + name + "%0A" +
-        "Phone: " + phone + "%0A" +
-        "Product: " + product + "%0A" +
-        "Quantity: " + quantity + "%0A" +
-        "Details: " + details;
-
-    var url = "https://wa.me/27764233543?text=" + message;
-
-    window.open(url, "_blank");
-}
-</script>
-
+ 
 </body>
 </html>
 
