@@ -11,41 +11,42 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
-<!-- NAVIGATION -->
 <header>
-    <nav>
-        <h1>Beez Bakery</h1>
-        <ul>
+    <img src="img/Bakery Logo.jpeg" width="32">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <nav class="navbar">
+        <a href="home.html">Home</a>  
+        <a href="about.html">About</a> 
         <a href="enquiry.html">Enquire</a>
         <a href="contact.html">Contact</a>
-        <a href="about.html">About</a> 
-        <a href="home.html">Home</a>   
-        <a href="products.html">Products</a>
-        </ul>
-    </nav>
+        <a href="products.html">Products</a> 
+
+        
+        <div class="icons">
+    
+            <div class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
+    <div class="cart-icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
+    <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+    </div>
 </header>
+<body>
+
+ 
 
 <!-- ENQUIRY SECTION -->
 <section class="enquiry">
     <h2>Enquire About Other Products</h2>
-    <p>Looking for something special? Send us a message and we’ll get back to you on WhatsApp.</p>
+    <p>Contact us to enquire.</p>
 
-    <form onsubmit="sendEnquiry(); return false;">
+    <!--Contact Info -->
+        <div class="contact-info">
+             
+            <p><i class="fas fa-phone-alt"></i>+27764233543| +27722713466</p>
+            <p><i class="fas fa-envelope"></i>welheminasito@gmail.com</p>
+        </div>
 
-        <input type="text" id="name" placeholder="Your Name" required><br>
-
-        <input type="tel" id="phone" placeholder="Your Phone Number" required><br>
-
-        <textarea id="message" placeholder="What would you like to enquire about?" required></textarea><br>
-
-        <button type="submit">
-            <i class="fab fa-whatsapp"></i> Send Enquiry
-        </button>
-
-    </form>
+     
 </section>
 
 <!-- FOOTER -->
