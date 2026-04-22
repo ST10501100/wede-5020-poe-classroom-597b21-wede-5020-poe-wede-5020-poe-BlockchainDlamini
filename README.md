@@ -12,18 +12,29 @@ Beez Bakery
 
 ## Website Goals and Objectives
 
- Beez Bakery’s mission and vision is to provide affordable and nutritious products to the community. The business aims at expanding and providing quality products nationally.
+  Beez Bakery’s mission is to create high-quality, freshly baked goods that makenevery moment memorable.The vision for the bakery expand in branches providing exceptional products nationally
 
 ## Timeline and Milestones
 
-Research and Planning: Decided on NGO and started my research on the business on Day 1-3.
-Research on business: Finished off my research on day 4 and started looking for images and Logo about the business.
-Writing proposal: Wrote down my proposal for the business on days 5-12.
-Writing HTML code: Started writing my HTML code on days 13-20.
+ Week 1 | Day 1-7 | Research & Planning  
+Day 1-3: Research & planning
+Day 4: Business research for Beez Bakery/Interviewing business owner
+Day 5-7: Start writing proposal
+
+Week 2 | Day 8-14 | Proposal 
+Day 8-14: Write & submit proposal
+Day 18:  Get proposal approval
+
+Week 3 | Day 15-20 | HTML code
+Day 15-20: Complete HTML code
 
 Milestones
 
-Codes for all web pages are functoning.
+1.) Research complete
+2.) Proposal complete
+3.) Proposal approved
+4.) HTML code complete and functioning
+ 
 
 
 
