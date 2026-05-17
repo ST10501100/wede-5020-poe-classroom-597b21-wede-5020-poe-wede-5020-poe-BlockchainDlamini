@@ -2,7 +2,7 @@
 Beez Bakery
 
 ## Student Information
-**Student number:** ST10501100 <br>
+**Student number:** ST10501100 
 **Student Name:** Pako Mangwane
 
 ## Project Overview
