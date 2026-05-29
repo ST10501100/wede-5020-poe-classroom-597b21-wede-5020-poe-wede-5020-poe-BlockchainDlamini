@@ -7,7 +7,8 @@
 <script src="https://kit.fontawesome.com/fc1f754a38.js" crossorigin="anonymous"></script>
 
     <title>Beez Bakery</title>
-
+<!-- Linking css file to html code -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
     <header>
@@ -33,70 +34,109 @@
 </header>
  
 <!-- Products Section -->
-    <section class="products">
-        <h2>Beez Bakery Products</h2>
-         
-        <div class="product-container">
+   <section class="products">
+  <h2>Beez Bakery Products</h2>
 
-            <div class="product-card">
-                <h3>Cakes</h3>
-                 <img src="img/Cakes 2026-04-19 at 07.48.35.jpeg" width="120">
-            </div>
+  <div class="product-container">
 
-             
+    <div class="product-card">
+      <h3>Cakes</h3>
+      <img 
+        src="img/WhatsApp Image 2026-05-28 at 17.08.50.jpeg"
+        srcset="img/WhatsApp Image 2026-05-28 at 17.08.50-400w.jpeg 400w, img/WhatsApp Image 2026-05-28 at 17.08.50-800w.jpeg 800w"
+        sizes="(max-width: 600px) 90vw, 200px"
+        alt="Assorted cakes">
+    </div>
 
-            <div class="product-card">
-                <h3>Cookies and Scones</h3>
-               <img src="img/Cookies 2026-04-19 at 07.48.35.jpeg" width="120">
-            </div>
-       
-            
+    <div class="product-card">
+      <h3>Buttercream Cakes</h3>
+      <img 
+        src="img/Buttercream cakes 2026-04-20 at 04.26.02.jpeg"
+        srcset="img/Buttercream cakes 2026-04-20 at 04.26.02-400w.jpeg 400w, img/Buttercream cakes 2026-04-20 at 04.26.02-800w.jpeg 800w"
+        sizes="(max-width: 600px) 90vw, 200px"
+        alt="Buttercream cake with frosting">
+    </div>
 
-            <div class="product-card">
-                <h3>Cupcakes</h3>
-                 <img src="img/Cakes in a cup2026-04-20 at 04.43.42.jpeg" width="120">
-            </div>
-            <div class="product-card">
-                <h3>Wedding Cakes</h3>
-                <img src="img/wedding cakes 2026-04-19 at 07.48.35.jpeg" width="120">
-            </div>
-            <div class="product-card highlight">
-                <h3>Enquire About Other Products</h3>
-                <p>Contact us for custom orders.</p>
-                <a href="contact.html">Contact Page</a>
-            </div>
+    <div class="product-card">
+      <h3>Cookies and Scones</h3>
+      <img 
+        src="img/Cookies 2026-04-19 at 07.48.35.jpeg"
+        srcset="img/Cookies 2026-04-19 at 07.48.35-400w.jpeg 400w, img/Cookies 2026-04-19 at 07.48.35-800w.jpeg 800w"
+        sizes="(max-width: 600px) 90vw, 200px"
+        alt="Cookies and scones on plate">
+    </div>
 
-        </div>
-    </section>
+    <div class="product-card">
+      <h3>Cupcakes</h3>
+      <img 
+        src="img/Cakes in a cup2026-04-20 at 04.43.42.jpeg"
+        srcset="img/Cakes in a cup2026-04-20 at 04.43.42-400w.jpeg 400w, img/Cakes in a cup2026-04-20 at 04.43.42-800w.jpeg 800w"
+        sizes="(max-width: 600px) 90vw, 200px"
+        alt="Cupcakes in paper cups">
+    </div>
 
-    <!-- ORDER SECTION -->
-<section class="order">
+    <div class="product-card wedding-right">
+      <h3>Wedding Cakes</h3>
+      <img 
+        src="img/wedding cakes 2026-04-19 at 07.48.35.jpeg"
+        srcset="img/wedding cakes 2026-04-19 at 07.48.35-400w.jpeg 400w, img/wedding cakes 2026-04-19 at 07.48.35-800w.jpeg 800w"
+        sizes="(max-width: 600px) 90vw, 200px"
+        alt="White wedding cake with flowers">
+    </div>
 
-    <h2>Place Your Order</h2>
-   <b><p>Plain scones</b>
-       5L =R300 |
-       10L=R500 |
-       20L=R750
-       
-    
-    </p>
-  <b><p>Vanilla Scones</b>
-       5L =R400 |
-       10L=R600 |
-       20L=R800
-  </p> 
-
- <b><p>Melting Moments Buscuits</b>
-      2.5L =R200 |
-        5L =R400 |
-        10L=R850 |
-        20L=R1300
-        <p>Fill in details to start order.</p>
-
+  </div> <!-- closes product-container -->
+</section>
          
         
-
-     
+ <table border="1">
+    <h1>Produt Information</h1>
+  <caption>Beez Bakery Product List</caption>
+  
+  <thead>
+    <tr>
+      <th scope="col">Product</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Cupcakes</td>
+      <td>Vanilla, Red Velvet, Chocolate and more</td>
+      <td>Enquire about prices</td>
+      <td>From 6+</td>
+    </tr>
+    <tr>
+      <td>Birthday Cake</td>
+      <td>Custom design</td>
+      <td>Enquire about price</td>
+      <td>Custom</td>
+    </tr>
+    <tr>
+      <td>Wedding Cake</td>
+      <td>Custom design</td>
+      <td>Enquire about price</td>
+      <td>Custom</td>
+    </tr>
+    <tr>
+      <td>Scones</td>
+      <td>Plain, Vanilla, Raisins</td>
+      <td>
+        Plain: 5L=R300, 10L=R500, 20L=R750<br>
+        Vanilla: 5L=R400, 10L=R600, 20L=R800
+      </td>
+      <td>5L, 10L, 20L</td>
+    </tr>
+    <tr>
+      <td>Busicuits</td>
+      <td>Melting moments, Plain, Decorated</td>
+      <td>2.5L=R200, 5L=R400/R450, 10L=R850, 20L=R1300 </td>
+      <td>2.5L, 5L, 10L, 20L</td>
+    </tr>
+  </tbody>
+</table>
 
     </form>
 
