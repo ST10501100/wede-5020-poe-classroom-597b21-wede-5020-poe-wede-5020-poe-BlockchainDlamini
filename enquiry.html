@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Beez Bakery | Enquiry</title>
-
+<!-- Linking css file to html code -->
+    <link rel="stylesheet" href="style.css">
     
     <script src="https://kit.fontawesome.com/fc1f754a38.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <img src="img/Bakery Logo.jpeg" width="80">
+    <img src="img/Bakery Logo.jpeg" width="120">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <nav class="navbar">
@@ -49,6 +50,54 @@
      
 </section>
 
+ <table border="1">
+  <caption>Beez Bakery Product List</caption>
+  
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Cupcakes</td>
+      <td>Vanilla,Red velvet, Chocolate and more</td>
+      <td>Enquire about prices</td>
+      <td>From 6+</td>
+    </tr>
+    <tr>
+      <td>Birthday Cake</td>
+      <td>Custom design</td>
+      <td>Enquire about price</td>
+      <td>Custom</td>
+    </tr>
+    <tr>
+      <td>Wedding Cakes</td>
+      <td>Custom design</td>
+      <td>Enquire about price</td>
+      <td>Custom</td>
+    </tr>
+    <tr>
+      <td>Scones</td>
+      <td>Plain,Vanilla,Raisins</td>
+      <td>(Plain Scones)
+        5litres=R300
+          10litres=R500 
+          20litres=R750
+          (Vanilla Scones)
+          5litres=R400
+          10litres=R600
+          20litres=R800
+      </td>
+      <td>5L,10L,20L</td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Beez Bakery. All rights reserved.</p>
@@ -62,17 +111,4 @@
 <script>
  
 
-    var name = document.getElementById("name").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
-
-    var whatsappMessage =
-        "New Enquiry from Beez Bakery:%0A" +
-        "Name: " + name + "%0A" +
-        "Phone: " + phone + "%0A" +
-        "Enquiry: " + message;
-
-    var url = "https://wa.me/27764233543?text=" + whatsappMessage;
-
-    window.open(url, "_blank");
- 
+     
