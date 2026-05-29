@@ -1,0 +1,389 @@
+ 
+ /* ===== 1. CSS RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== 2. RELATIVE UNITS 3.2 ===== */
+html {
+  font-size: 16px; /* 1rem = 16px base */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8dc;
+  color: #3e2f1c;
+  line-height: 1.6;
+  padding: 1.25rem; /* rem instead of px */
+  font-size: 1rem;  /* 16px */
+}
+
+/* ===== 3. HEADER + NAV ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.9rem 1.8rem; /* rem for spacing */
+  margin-bottom: 1.8rem;
+  border: 2px solid brown;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  width: 7.5rem;   /* 120px → 7.5rem */
+  height: 7.5rem;
+  object-fit: cover;
+}
+
+.navbar a {
+  margin-left: 1.25rem;
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #d97706;
+  border-bottom: 2px solid #d97706;
+}
+
+/* ===== 4. PRODUCTS - Multi-column layout 3.1 ===== */
+.products h2 {
+  text-align: center;
+  color: brown;
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.8rem; /* rem for responsive font */
+  border-left: 5px solid #d97706;
+  padding-left: 0.75rem;
+}
+
+.product-container {
+  display: flex;           /* multi-column on large screens */
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  width: 100%;             /* % for responsive width 3.2 */
+}
+
+.product-card {
+  background: white;
+  border: 2px solid brown;
+  padding: 0.6rem;
+  width: 12.5rem;          /* 200px → 12.5rem */
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+}
+
+.product-card:hover {
+  background: #fff3c4;
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.product-card h3 {
+  color: brown;
+  margin: 0.5rem 0;
+  font-size: 1.2rem; /* rem */
+}
+
+/* ===== 5. RESPONSIVE IMAGES 3.3 ===== */
+.product-card img {
+  width: 100%;        /* % makes image responsive */
+  max-width: 7.5rem;  /* don’t grow past 120px */
+  height: auto;       /* keeps aspect ratio */
+  border: 1px solid #ddd;
+}
+
+.wedding-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wedding-right img {
+  margin-left: auto;
+}
+
+/* ===== 6. TABLE ===== */
+table {
+  border: 2px solid brown;
+  width: 90%;         /* % width = responsive 3.2 */
+  max-width: 50rem;   /* 800px → 50rem */
+  margin: 1.8rem auto;
+  background: white;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: brown;
+  padding: 0.6rem;
+}
+
+th, td {
+  border: 1px solid brown;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+th {
+  background: #ffd700;
+}
+
+/* ===== 7. BREAKPOINTS 3.1 ===== */
+/* Tablet: 768px = 48rem */
+@media (max-width: 48rem) {
+  body {
+    font-size: 0.95rem; /* smaller font */
+  }
+  .product-card {
+    width: 11rem;
+  }
+}
+
+/* Mobile: 600px = 37.5rem - switches to single column */
+@media (max-width: 37.5rem) {
+  header {
+    flex-direction: column; /* single column nav */
+    gap: 0.6rem;
+  }
+  .product-container {
+    flex-direction: column; /* single column cards */
+    align-items: center;
+  }
+  .product-card {
+    width: 90%;        /* % width for mobile */
+    max-width: 18rem;
+  }
+  body {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+/* ===== 1. CSS RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== 2. RELATIVE UNITS 3.2 ===== */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8dc;
+  color: #3e2f1c;
+  line-height: 1.6;
+  padding: 1.25rem; /* rem instead of px */
+  font-size: 1rem;
+}
+
+/* ===== 3. HEADER + NAV - Flexbox 2.4 ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.9rem 1.8rem;
+  margin-bottom: 1.8rem;
+  border: 2px solid brown;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+}
+
+.navbar a {
+  margin-left: 1.25rem;
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ===== 4. VISUAL STYLES + PSEUDO-CLASSES 2.5 ===== */
+.navbar a:hover,
+.navbar a.active {
+  color: #d97706;                    /* color */
+  border-bottom: 2px solid #d97706;  /* border */
+}
+
+/* ===== 5. PRODUCTS - Multi-column Flexbox 2.4, 3.1 ===== */
+.products h2 {
+  text-align: center;
+  color: brown;
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.8rem;
+  border-left: 5px solid #d97706;
+  padding-left: 0.75rem;
+}
+
+.product-container {
+  display: flex;           /* Flexbox layout structure */
+  flex-direction: row;     /* multi-column on desktop */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;             /* space between cards */
+  padding: 1.25rem 0;
+  width: 100%;
+}
+
+.product-card {
+  background: white;                        /* background-color 2.5 */
+  border: 2px solid brown;                  /* border 2.5 */
+  padding: 0.6rem;
+  width: 12.5rem;          /* 200px = 12.5rem */
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);  /* box-shadow 2.5 */
+  transition: 0.2s ease;
+}
+
+/* :hover pseudo-class for interactive 2.5 */
+.product-card:hover {
+  background: #fff3c4;     /* background-color changes */
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.product-card h3 {
+  color: brown;
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* ===== 6. RESPONSIVE IMAGES 3.3 ===== */
+.product-card img {
+  width: 100%;        /* % = responsive, fills card width */
+  max-width: 7.5rem;  /* don’t grow bigger than 120px */
+  height: auto;       /* keeps aspect ratio */
+  border: 1px solid #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Only move Wedding Cakes image to the right */
+.wedding-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wedding-right img {
+  margin-left: auto;  /* pushes image to right side */
+}
+
+/* ===== 7. TABLE ===== */
+table {
+  border: 2px solid brown;
+  width: 90%;         /* % width = responsive 3.2 */
+  max-width: 50rem;   /* 800px = 50rem */
+  margin: 1.8rem auto;
+  background: white;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: brown;
+  padding: 0.6rem;
+}
+
+th {
+  background: #ffd700;     /* background-color */
+  border: 1px solid brown; /* border */
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+td {
+  border: 1px solid brown;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ===== 8. BREAKPOINTS 3.1 ===== */
+/* Tablet: 768px = 48rem */
+@media (max-width: 48rem) {
+  body {
+    font-size: 0.95rem;
+  }
+  .product-card {
+    width: 11rem; /* smaller cards */
+  }
+}
+
+/* Mobile: 600px = 37.5rem - switches to single column 3.1 */
+@media (max-width: 37.5rem) {
+  header {
+    flex-direction: column; /* single column nav */
+    gap: 0.6rem;
+  }
+  .product-container {
+    flex-direction: column; /* single column cards */
+    align-items: center;
+  }
+  .product-card {
+    width: 90%;        /* % width for mobile */
+    max-width: 18rem;
+  }
+  .wedding-right {
+    flex-direction: column; /* stack text + image on mobile */
+  }
+  .wedding-right img {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  body {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+/* ===== FOOTER + SOCIAL ICONS ===== */
+footer {
+  position: relative;  /* needed so icons can stick to bottom-right */
+  padding: 1.5rem;
+  text-align: left;    /* keeps copyright text left */
+  background: white;
+  border-top: 2px solid brown;
+  margin-top: 3rem;
+}
+
+footer .social-icons {
+  position: absolute;  /* takes icons out of normal flow */
+  bottom: 1rem;        /* distance from bottom */
+  right: 1.5rem;       /* distance from right edge */
+  display: flex;
+  gap: 0.8rem;         /* space between icons */
+}
+
+footer .social-icons a {
+  color: #d97706;      /* icon color */
+  font-size: 1.5rem;   /* icon size */
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+footer .social-icons a:hover {
+  color: brown;        /* hover color change 2.5 */
+  transform: scale(1.1);
+}
