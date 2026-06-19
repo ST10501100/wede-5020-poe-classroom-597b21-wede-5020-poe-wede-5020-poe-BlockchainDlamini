@@ -7,6 +7,7 @@
     <title>Beez Bakery | Enquiry</title>
 <!-- Linking css file to html code -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     
     <script src="https://kit.fontawesome.com/fc1f754a38.js" crossorigin="anonymous"></script>
 
@@ -23,13 +24,13 @@
         <a href="contact.html">Contact</a>
         <a href="products.html">Products</a> 
 
-        
         <div class="icons">
     
             <div class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
     <div class="cart-icon"><i class="fa-solid fa-cart-arrow-down"></i></div>
     <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
     </div>
+        
 </header>
 <body>
 
@@ -98,17 +99,86 @@
   </tbody>
 </table>
 
-<!-- FOOTER -->
-<footer>
-    <p>&copy; 2026 Beez Bakery. All rights reserved.</p>
+ <section class="enquiry" style="padding: 60px 20px; max-width: 700px; margin: auto;">
+        <h2 style="text-align:center; color:#d2691e; margin-bottom:30px;">Send Us An Enquiry</h2>
+        <p style="text-align:center; margin-bottom:40px;">Have a question about custom cakes, pricing, or bulk orders? Fill in the form and we’ll WhatsApp you back.</p>
 
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/27764233543"><i class="fab fa-whatsapp"></i></a>
-        <a href="tel:+27764233543"><i class="fas fa-phone-alt"></i></a>
-    </div>
+        <form id="enquiry-form" style="background:#fff8f0; padding:30px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+            
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Full Name *</label>
+            <input type="text" id="enq-name" required placeholder="e.g. Molly Dikana" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;">
+
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Cell Number *</label>
+            <input type="tel" id="enq-cell" required placeholder="e.g.+27" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;">
+
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Email</label>
+            <input type="email" id="enq-email" placeholder="e.g. mollyDikana@gmail.com" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;">
+
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Enquiry Type *</label>
+            <select id="enq-type" required style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;">
+                <option value="">-- Select --</option>
+                <option value="Custom Cake Quote">Custom Cake Quote</option>
+                <option value="Wedding Cake">Wedding Cake</option>
+                <option value="Bulk Order">Bulk Order - Scones/Biscuits</option>
+                <option value="General Question">General Question</option>
+            </select>
+
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Date Needed</label>
+            <input type="date" id="enq-date" style="width:100%; padding:12px; margin-bottom:20px; border:1px solid #ccc; border-radius:5px;">
+
+            <label style="display:block; margin-bottom:5px; font-weight:bold;">Your Message *</label>
+            <textarea id="enq-message" required rows="5" placeholder="Write about your enquiry " style="width:100%; padding:12px; margin-bottom:25px; border:1px solid #ccc; border-radius:5px;"></textarea>
+
+            <button type="button" onclick="sendEnquiry()" style="background:#25D366; color:white; padding:14px 30px; border:none; border-radius:5px; font-size:16px; cursor:pointer; width:100%; font-weight:bold;">
+                <i class="fab fa-whatsapp"></i> Send Enquiry via WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <!-- WHATSAPP SCRIPT -->
+    <script>
+    function sendEnquiry() {
+        let name = document.getElementById("enq-name").value.trim();
+        let cell = document.getElementById("enq-cell").value.trim();
+        let email = document.getElementById("enq-email").value.trim();
+        let type = document.getElementById("enq-type").value;
+        let date = document.getElementById("enq-date").value;
+        let message = document.getElementById("enq-message").value.trim();
+
+        if (!name || !cell || !type || !message) {
+            alert("Please fill in Name, Cell, Enquiry Type and Message");
+            return;
+        }
+
+        let whatsappMsg = "*Beez Bakery Enquiry*\n\n";
+        whatsappMsg += "*Name:* " + name + "\n";
+        whatsappMsg += "*Cell:* " + cell + "\n";
+        if(email) whatsappMsg += "*Email:* " + email + "\n";
+        whatsappMsg += "*Type:* " + type + "\n";
+        if(date) whatsappMsg += "*Date Needed:* " + date + "\n\n";
+        whatsappMsg += "*Message:* " + message;
+
+        let phone = "27764233543"; // +27 76 423 3543
+        let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(whatsappMsg);
+        window.open(url, "_blank");
+    }
+    </script>
+
+    <!-- Footer -->
+    <footer style="margin-top:50px;">
+        <p>&copy; 2026 Beez Bakery. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/27764233543"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+27764233543"><i class="fas fa-phone-alt"></i></a>
+        </div>
+    </footer>
+
+     
+
+ 
   
-<script>
+
  
 
      
